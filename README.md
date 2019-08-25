@@ -18,17 +18,23 @@ All rules of calculation are to be derived from this one sentence, which are:
 - At the beginning of the years, monthly usage fees of postpaid subscribers will be paid on monthly basis as usual, however because of the “on the contrary” expression, monthly usage fees for prepaid subscribers turn into annual fees and paid at the end of the 1st month in advance.
 
 If a subscriber changes its payment type from post to pre:
-- If this change occurs at the first year of subscription
+
+If this change occurs at the first year of subscription
 - The rest of the one-off fee installments are charged as a whole at that month.
 - The rest of monthly usage fee payments for that year turns into annual fee and charged at the end of that month.
+
 If this change occurs later than the first year
 - Since one-off fee installments have been completed before, only monthly usage fee turns into annual fee and charged at the end of that month.
+
 If a subscriber changes its payment type from pre to post:
 - Regardless of the year of subscription, since both one-off license fee and monthly usage fee have already been charged, these subscribers are not charged to the end of the year.
+
 If a subscriber moves to a different operator from pre to post and pre to pre
 - The new operator should identify that this subscriber was prepaid before and do not charge for the rest of the year. 
+
 From post to pre
 - Donor operator charges the whole remaining fees as of the month of the move
+
 From post to post
 - Donor operator charges for the remaining installments of the one-off license fee (if the subscription is in its first year), and only one month’s monthly fee, the month of the move. Receiver operator knows this and begins charging monthly fees at the following month.
 
