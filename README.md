@@ -52,14 +52,16 @@ Each of three mobile operators has their own database structure, table relations
 
 Throughout this project a unique data format has been engineered in order to map fees to highly complex subscriber moves. 
 
-Sample Scenario 1: A subscriber (let be the one-off license fee and monthly fee x 12 equal to $12);
+_Sample Scenario 1: A subscriber (let be the one-off license fee and monthly fee x 12 equal to $12);_
 - Entered the system last year as postpaid
 - Terminated its contract at this year’s 8th month
+
 will pay 
+
 - One-off fee: None, b/c one-off fee debt is closed at the end of last year
 - Monthly fee: $12/12 = $1 monthly payments each month for 8 months.
 
-Sample Scenario 2: A subscriber (let be the one-off license fee and monthly fee x 12 equal to $12)
+_Sample Scenario 2: A subscriber (let be the one-off license fee and monthly fee x 12 equal to $12)_
 - Entered system at 7th month as postpaid
 - Changed type to prepaid at 9th month,
 - Moved to another provider at 11th month as postpaid
