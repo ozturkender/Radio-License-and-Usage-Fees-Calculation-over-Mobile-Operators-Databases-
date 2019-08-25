@@ -71,13 +71,13 @@ will pay
 - One-off fee: $12/6 monthly installments up to 9th month for 3 months, and the remaining 3 installments (3 x  $12/6) at the 9th month, will not be charged by receiver operator after 11th month
 - Monthly fee: $12/12 monthly installments up to 9th month for 3 months, and remaining 3 installments (3 x $12/12) at the 9th month
 
-- After comprehensive and extremely detailed work, 3,280 different scenarios have been identified, 1,249 of these scenarios necessitate payments, and the rest are to ensure the integrity of the model.
+- After comprehensive and extremely detailed work, __3,280 different scenarios__ have been identified, 1,249 of these scenarios necessitate payments, and the rest are to ensure the integrity of the model.
 
-- Over 25 thousand lines of SQL code had been written and inspected. 
+- Over __25 thousand lines of SQL code__ had been written and inspected. 
 
 ## Conclusion
 
-- At the end of this 3-years-long massive project, it is revealed that more than $50M of taxpayers money had been unpaid by mobile operators.
+- At the end of this __3-years-long massive project__, it is revealed that more than __$50M of taxpayers money__ had been unpaid by mobile operators.
 
 - Engineered data format became the main structure that prevented future discrepancy between government and mobile operators. 
 
