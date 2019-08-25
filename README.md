@@ -25,14 +25,15 @@ If this change occurs later than the first year
 - Since one-off fee installments have been completed before, only monthly usage fee turns into annual fee and charged at the end of that month.
 If a subscriber changes its payment type from pre to post:
 - Regardless of the year of subscription, since both one-off license fee and monthly usage fee have already been charged, these subscribers are not charged to the end of the year.
-If a subscriber moves to a different operator
-- From pre to post and pre to pre
+If a subscriber moves to a different operator from pre to post and pre to pre
 - The new operator should identify that this subscriber was prepaid before and do not charge for the rest of the year. 
-- From post to pre
+From post to pre
 - Donor operator charges the whole remaining fees as of the month of the move
-- From post to post
+From post to post
 - Donor operator charges for the remaining installments of the one-off license fee (if the subscription is in its first year), and only one month’s monthly fee, the month of the move. Receiver operator knows this and begins charging monthly fees at the following month.
+
 If a subscriber changes its payment type from prepaid to postpaid and then moves to a different operator 
+
 - Since the subscriber was prepaid at somewhere in that year, all fees were charged already. Therefore, receiver operator should know that even if the subscriber’s last payment type was postpaid, it should not be charged for the rest of the year. 
 
 ## Dataset:
