@@ -2,7 +2,7 @@
 Data Analysis using SQL
 
 
-# Objective:
+## Objective:
 	The aim of this project is accurately calculate the amount of radio fees that all mobile operators should pay to government. 
 	This fee is calculated based on the initiation and termination of subscription of subscribers. There are two types of radio fees, one-off license fee and monthly usage fee. The relevant law act is given below
 
