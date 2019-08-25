@@ -3,10 +3,10 @@ Data Analysis using SQL
 
 
 # Objective:
-The aim of this project is accurately calculate the amount of radio fees that all mobile operators should pay to government. 
+ - The aim of this project is accurately calculate the amount of radio fees that all mobile operators should pay to government. 
 This fee is calculated based on the initiation and termination of subscription of subscribers. There are two types of radio fees, one-off license fee and monthly usage fee. The relevant law act is given below
 ECL - 5809.45-5: Radio license and usage fees collected from the postpaid subscribers (on the contrary of prepaid subscribers) of operators providing mobile electronic communications services shall be received on the basis of dividing fee amount into equivalent installments as of the month when subscription took place until the end of year.
-All rules of calculation are to be derived from this one sentence, which are:
+ - All rules of calculation are to be derived from this one sentence, which are:
 	Postpaid subscribers one-off license fees will be paid dividing fee amount into equivalent installments as of the month when subscription took place until the end of the year (i.e. Let fee be $12, if subscription initialized at 5th month, payments will be from 5th to 12th months in 8 installments of $12⁄8=$1.5)
 	Postpaid subscribers monthly usage fees will be paid monthly (i.e. $12⁄12=$1 for each month) and will continue so until the termination of subscription.
 	Prepaid subscribers one-off license fees will be paid as a whole at the end of subscription month (i.e. $12 at the end of 5th month.)
