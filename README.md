@@ -43,7 +43,7 @@ If a subscriber changes its payment type from prepaid to postpaid and then moves
 - Since the subscriber was prepaid at somewhere in that year, all fees were charged already. Therefore, receiver operator should know that even if the subscriber’s last payment type was postpaid, it should not be charged for the rest of the year. 
 
 ## Dataset:
-Databases contain over 80 million subscribers subscription and movement data spread over tens of different tables for each of three mobile operators involving last 10 years, adding up to around 1.5 billion rows of information.
+Databases contain over __80 million subscribers'__ subscription and movement data spread over tens of different tables for each of three mobile operators involving last 10 years, adding up to around __1.5 billion rows of information__.
 
 ## Analyses
 Each of three mobile operators has their own database structure, table relations in terms of primary and foreign keys. Each structure has been comprehended and interpreted to
@@ -51,24 +51,31 @@ Each of three mobile operators has their own database structure, table relations
 - define with which key should a subscriber be followed (i.e. mobile number cannot be used for this purpose b/c tens of thousands of subscribers change their number without terminating their contract)
 
 Throughout this project a unique data format has been engineered in order to map fees to highly complex subscriber moves. 
-	Sample Scenario 1: A subscriber (let be the one-off license fee and monthly fee x 12 equal to $12);
-	Entered the system last year as postpaid
-	Terminated its contract at this year’s 8th month
-will pay
-	One-off fee: None, b/c one-off fee debt is closed at the end of last year
-	Monthly fee: $12/12 = $1 monthly payments each month for 8 months.
 
-	Sample Scenario 2: A subscriber (let be the one-off license fee and monthly fee x 12 equal to $12)
-	Entered system at 7th month as postpaid
-	Changed type to prepaid at 9th month,
-	Moved to another provider at 11th month as postpaid
-will pay
-	One-off fee: $12/6 monthly installments up to 9th month for 3 months, and the remaining 3 installments (3 x  $12/6) at the 9th month, will not be charged by receiver operator after 11th month
-	Monthly fee: $12/12 monthly installments up to 9th month for 3 months, and remaining 3 installments (3 x $12/12) at the 9th month
+Sample Scenario 1: A subscriber (let be the one-off license fee and monthly fee x 12 equal to $12);
+- Entered the system last year as postpaid
+- Terminated its contract at this year’s 8th month
+will pay 
+- One-off fee: None, b/c one-off fee debt is closed at the end of last year
+- Monthly fee: $12/12 = $1 monthly payments each month for 8 months.
 
-	After comprehensive and extremely detailed work, 3,280 different scenarios have been identified, 1,249 of these scenarios necessitate payments, and the rest are to ensure the integrity of the model.
-	Over 25 thousand lines of SQL code had been written and inspected. 
-Conclusion
-	At the end of this 3-years-long massive project, it is revealed that more than $50M of taxpayers money had been unpaid by mobile operators.
-	Engineered data format became the main structure that prevented future discrepancy between government and mobile operators. 
+Sample Scenario 2: A subscriber (let be the one-off license fee and monthly fee x 12 equal to $12)
+- Entered system at 7th month as postpaid
+- Changed type to prepaid at 9th month,
+- Moved to another provider at 11th month as postpaid
+
+will pay
+
+- One-off fee: $12/6 monthly installments up to 9th month for 3 months, and the remaining 3 installments (3 x  $12/6) at the 9th month, will not be charged by receiver operator after 11th month
+- Monthly fee: $12/12 monthly installments up to 9th month for 3 months, and remaining 3 installments (3 x $12/12) at the 9th month
+
+- After comprehensive and extremely detailed work, 3,280 different scenarios have been identified, 1,249 of these scenarios necessitate payments, and the rest are to ensure the integrity of the model.
+
+- Over 25 thousand lines of SQL code had been written and inspected. 
+
+## Conclusion
+
+- At the end of this 3-years-long massive project, it is revealed that more than $50M of taxpayers money had been unpaid by mobile operators.
+
+- Engineered data format became the main structure that prevented future discrepancy between government and mobile operators. 
 
