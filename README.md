@@ -10,7 +10,8 @@ Data Analysis using SQL
 _ECL - 5809.45-5: Radio license and usage fees collected from the postpaid subscribers (on the contrary of prepaid subscribers) of operators providing mobile electronic communications services shall be received on the basis of dividing fee amount into equivalent installments as of the month when subscription took place until the end of year._
 
 - All rules of calculation are to be derived from this one sentence, which are:
---Postpaid subscribers one-off license fees will be paid dividing fee amount into equivalent installments as of the month when subscription took place until the end of the year (i.e. Let fee be $12, if subscription initialized at 5th month, payments will be from 5th to 12th months in 8 installments of $12⁄8=$1.5)
+	Postpaid subscribers one-off license fees will be paid dividing fee amount into equivalent installments as of the month when subscription took place until the end of the year (i.e. Let fee be $12, if subscription initialized at 5th month, payments will be from 5th to 12th months in 8 installments of $12⁄8=$1.5)
+	
 	Postpaid subscribers monthly usage fees will be paid monthly (i.e. $12⁄12=$1 for each month) and will continue so until the termination of subscription.
 	Prepaid subscribers one-off license fees will be paid as a whole at the end of subscription month (i.e. $12 at the end of 5th month.)
 	Prepaid subscribers monthly usage fees will be paid on pro-rata basis depending on the month of subscription (i.e. for a prepaid subscriber entered the system at 5th month 5⁄12×$12=$5 will be paid) for that year.
