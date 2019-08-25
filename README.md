@@ -2,11 +2,13 @@
 Data Analysis using SQL
 
 
-# Objective:
- - The aim of this project is accurately calculate the amount of radio fees that all mobile operators should pay to government. 
-This fee is calculated based on the initiation and termination of subscription of subscribers. There are two types of radio fees, one-off license fee and monthly usage fee. The relevant law act is given below
-ECL - 5809.45-5: Radio license and usage fees collected from the postpaid subscribers (on the contrary of prepaid subscribers) of operators providing mobile electronic communications services shall be received on the basis of dividing fee amount into equivalent installments as of the month when subscription took place until the end of year.
- - All rules of calculation are to be derived from this one sentence, which are:
+Radio License and Usage Fees Calculation over Mobile Operators Databases 
+Objective:
+	The aim of this project is accurately calculate the amount of radio fees that all mobile operators should pay to government. 
+	This fee is calculated based on the initiation and termination of subscription of subscribers. There are two types of radio fees, one-off license fee and monthly usage fee. The relevant law act is given below
+
+_ECL - 5809.45-5: Radio license and usage fees collected from the postpaid subscribers (on the contrary of prepaid subscribers) of operators providing mobile electronic communications services shall be received on the basis of dividing fee amount into equivalent installments as of the month when subscription took place until the end of year._
+All rules of calculation are to be derived from this one sentence, which are:
 	Postpaid subscribers one-off license fees will be paid dividing fee amount into equivalent installments as of the month when subscription took place until the end of the year (i.e. Let fee be $12, if subscription initialized at 5th month, payments will be from 5th to 12th months in 8 installments of $12⁄8=$1.5)
 	Postpaid subscribers monthly usage fees will be paid monthly (i.e. $12⁄12=$1 for each month) and will continue so until the termination of subscription.
 	Prepaid subscribers one-off license fees will be paid as a whole at the end of subscription month (i.e. $12 at the end of 5th month.)
@@ -29,9 +31,9 @@ ECL - 5809.45-5: Radio license and usage fees collected from the postpaid subscr
 	Donor operator charges for the remaining installments of the one-off license fee (if the subscription is in its first year), and only one month’s monthly fee, the month of the move. Receiver operator knows this and begins charging monthly fees at the following month.
 	If a subscriber changes its payment type from prepaid to postpaid and then moves to a different operator
 	Since the subscriber was prepaid at somewhere in that year, all fees were charged already. Therefore, receiver operator should know that even if the subscriber’s last payment type was postpaid, it should not be charged for the rest of the year. 
-# Dataset:
+Dataset:
 Databases contain over 80 million subscribers subscription and movement data spread over tens of different tables for each of three mobile operators involving last 10 years, adding up to around 1.5 billion rows of information.
-# Analyses
+Analyses
 	Each of three mobile operators has their own database structure, table relations in terms of primary and foreign keys. Each structure has been comprehended and interpreted to
 	identify which type of entry corresponds to a new subscription and change of provider 
 	define with which key should a subscriber be followed (i.e. mobile number cannot be used for this purpose b/c tens of thousands of subscribers change their number without terminating their contract)
@@ -53,7 +55,7 @@ will pay
 
 	After comprehensive and extremely detailed work, 3,280 different scenarios have been identified, 1,249 of these scenarios necessitate payments, and the rest are to ensure the integrity of the model.
 	Over 25 thousand lines of SQL code had been written and inspected. 
-# Conclusion
+Conclusion
 	At the end of this 3-years-long massive project, it is revealed that more than $50M of taxpayers money had been unpaid by mobile operators.
 	Engineered data format became the main structure that prevented future discrepancy between government and mobile operators. 
 
