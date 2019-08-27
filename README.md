@@ -73,7 +73,7 @@ will pay
 
 - After comprehensive and extremely detailed work, __3,280 different scenarios__ have been identified, 1,249 of these scenarios necessitate payments, and the rest are to ensure the integrity of the model.
 
-- Over __150 thousand lines of SQL code__ had been written and inspected. 
+- Over __50 thousand lines of SQL code__ had been written and inspected. 
 
 ## Conclusion
 
