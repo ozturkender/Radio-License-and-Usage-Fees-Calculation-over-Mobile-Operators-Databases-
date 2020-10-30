@@ -77,7 +77,7 @@ will pay
 
 ## Conclusion
 
-- At the end of this __3-years-long massive project__, it is revealed that more than __$50M of taxpayers money__ had been unpaid by mobile operators.
+- At the end of this __5-years-long massive project__, it is revealed that more than __$50M of taxpayers money__ had been unpaid by mobile operators.
 
 - Engineered data format became the main structure that prevented future discrepancy between government and mobile operators. 
 
